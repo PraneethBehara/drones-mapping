@@ -1,0 +1,3 @@
+<launch>
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find drones_move)/launch/debug/config/debug.rviz" />
+</launch>

@@ -1,0 +1,13 @@
+<!-- Entry point for using OpenNI devices -->
+<launch>
+
+    <include file="$(find openni_launch)/launch/openni.launch">
+        <arg name="depth_registration" value="True" />
+    </include>
+
+  <!-- charuvah: Settings to throttle for remote mapping -->
+  <arg name="rate" default="5" /> <!-- Hz -->
+  <arg name="decimation" default="1" /> <!-- Reduce image size by factor -->
+
+
+</launch>

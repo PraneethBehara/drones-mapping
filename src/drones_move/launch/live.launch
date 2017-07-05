@@ -1,0 +1,7 @@
+<launch>
+    <include file="$(find drones_move)/launch/live/mapping.launch" />
+    <!--include file="$(find drones_move)/launch/live/visualization.launch" /-->
+    <node name="mapcombiner" pkg="drones_move" type="mapcombiner.py" output="screen" />
+    <node name="botmover" pkg="drones_move" type="botmover.py" output="screen" />
+</launch>
+

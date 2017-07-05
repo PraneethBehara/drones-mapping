@@ -1,0 +1,4 @@
+string command
+geometry_msgs/Pose pose
+---
+string status

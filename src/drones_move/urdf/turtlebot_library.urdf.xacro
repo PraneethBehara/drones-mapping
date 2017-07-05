@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+  The complete turtlebot library of xacros for easy reference
+ -->
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+  <!-- General -->
+  <xacro:include filename="$(find drones_move)/urdf/common_properties.urdf.xacro"/>
+  <xacro:include filename="$(find drones_move)/urdf/turtlebot_properties.urdf.xacro"/>
+  <!-- Bases -->
+  <xacro:include filename="$(find drones_move)/urdf/kobuki.urdf.xacro" />
+  <!-- Stacks -->
+  <xacro:include filename="$(find drones_move)/urdf/stacks/circles.urdf.xacro"/>
+  <xacro:include filename="$(find drones_move)/urdf/stacks/hexagons.urdf.xacro"/>
+  <!-- 3D Sensors -->
+  <xacro:include filename="$(find drones_move)/urdf/sensors/kinect.urdf.xacro"/>
+  <xacro:include filename="$(find drones_move)/urdf/sensors/asus_xtion_pro.urdf.xacro"/>
+  <xacro:include filename="$(find drones_move)/urdf/sensors/asus_xtion_pro_offset.urdf.xacro"/>
+</robot>
